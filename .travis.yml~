@@ -1,0 +1,14 @@
+language: ruby
+rvm:
+- 2.1.2
+- 1.9.3
+- jruby-19mode
+- rbx-2
+deploy:
+  provider: heroku
+  api_key:
+    secure: WzQvtxq/fb3mrtLe/az+eD7dYqLrZEZXACNduaI/PATKefUvHSvNMwDcUhX3qU15TkVJ5es0nMkXqiDKxI72aH06U1rR0jP43YtSwxg0FZbfqCTyCtjrQkJQOGlkkLX9NaChGFILfS2kB4zCTG1lyYTShVi//B6CwAH3rmvieG0=
+  app: limitless-reaches-5636
+  on:
+    repo: tanakamo/rails_enpit
+    branch: travis
